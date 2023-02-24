@@ -57,4 +57,4 @@ We consider the store is active only 50% of this unassumed time. So we add half 
 
 # Final Thoughts
 
-The report generation process takes around 10 minutes for ~14,000 stores and ~1,000,000 polls.
+The report generation process takes around 10 minutes for ~14,000 stores and ~1,000,000 polls. I think it can be optimized a bit more. I will look into it.
