@@ -49,11 +49,11 @@ After computing the `upper_margin` and `lower_margin` for each poll, we compute 
 
 Now, we have a function `compute_uptime_downtime(start, end, business_ranges, uptime_ranges, downtime_ranges)` which computes the aggregate time delta of the `uptime_ranges` and `downtime_ranges` overlapping partly or fully between the timestamps start and end (consider start and end to be `last_week_timestamp` and `current_timestamp` for instance), in two variables `uptime` and `downtime`. It also computes the aggregate time delta of the `business_ranges` overlapping partly or fully between the timestamps start and end, in a variable `business_time`. 
 
-Now, `uptime` and `downtime` refers to the total times for which we have assumed the store to be active or inactive. If, however, there was no poll for a particular business day, then, this time is being called `unassummed_time`
+Now, `uptime` and `downtime` refers to the total times for which we have assumed the store to be active or inactive. If, however, there was no poll for a particular business day, then, this time is being called `unassumed_time`
 ```
-unassummed_time = business_time - uptime - downtime
+unassumed_time = business_time - uptime - downtime
 ```
-We consider the store is active only 50% of this unassummed time. So we add half of `unassummed_time` to both `uptime` and `downtime`. This fraction 50% can be changed and tested with other values.
+We consider the store is active only 50% of this unassummed time. So we add half of `unassumed_time` to both `uptime` and `downtime`. This fraction 50% can be changed and tested with other values.
 
 # Final Thoughts
 
