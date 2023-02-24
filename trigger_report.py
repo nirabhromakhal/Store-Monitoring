@@ -135,7 +135,6 @@ def find_uptime_downtime_ranges(this_store_status_polls, business_hours_timestam
         polls_within_range['upper_timestamp'] = ''
         polls_within_range['lower_timestamp'] = ''
 
-        #polls_within_range.reset_index(drop=True, inplace=True)  # reset row labels to start from 0,1...
         # Find indices of the columns timestamp_utc, lower_timestamp, and upper_timestamp
         status_index = polls_within_range.columns.get_loc('status')
         timestamp_utc_index = polls_within_range.columns.get_loc('timestamp_utc')
