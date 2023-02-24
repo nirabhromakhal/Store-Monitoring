@@ -53,7 +53,7 @@ Now, `uptime` and `downtime` refers to the total times for which we have assumed
 ```
 unassumed_time = business_time - uptime - downtime
 ```
-We consider the store is active only 50% of this unassummed time. So we add half of `unassumed_time` to both `uptime` and `downtime`. This fraction 50% can be changed and tested with other values.
+We consider the store is active only 50% of this unassumed time. So we add half of `unassumed_time` to both `uptime` and `downtime`. This fraction 50% can be changed and tested with other values.
 
 # Final Thoughts
 
